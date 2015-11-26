@@ -5,7 +5,10 @@
 If you open two index.html files on the server one with a index.html#/?watch=true
 param you'll see the events coming in.
 
-Obviously not everything works in a 1 to 1 manner but it's pretty close.
+All i'm displaying in this POC is the event being recorded, and the record being
+displayed on another window.
+
+Eye tracking can easily be hooked into this POC as another event.
 
 It uses firebase to store and retrieve the data, it does most of the heavy lifting.
 

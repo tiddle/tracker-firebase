@@ -1,0 +1,14 @@
+<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;" ng-mousemove="vm.mouseMove($event)">
+    <h1>Game Area</h1>
+    <p>Current Score: {{vm.gameDetails.score}}</p>
+    <p>Time Remaining: {{vm.gameDetails.countdown}}</p>
+
+    <button ng-click="vm.startGame()">Start Game</button>
+    <button ng-click="vm.buttonClick(10, $event)">10</button>
+    <button ng-click="vm.buttonClick(20, $event)">20</button>
+    <button ng-click="vm.resetEverything()">Reset and Clear everything</button>
+
+    <h2>Debug Area</h2>
+    <pre>{{vm.gameDetails | json }}</pre>
+    <pre>{{vm.trackingDetails | json}}</pre>
+</div>
